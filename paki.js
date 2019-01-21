@@ -4,9 +4,15 @@ var pakImages = [];
   pakImages["Tocinauro"] = "cerdo.png";
 
 
-var colection = [];
-colection.push(new Pakiman("Cauchin", 100, 30));
-colection.push(new Pakiman("Pokacho", 80, 50));
-colection.push(new Pakiman("Tocinauro", 120, 40));
+var collection = [];
+collection.push(new Pakiman("Cauchin", 100, 30));
+collection.push(new Pakiman("Pokacho", 80, 50));
+collection.push(new Pakiman("Tocinauro", 120, 40));
 
-console.log(colection);
+for (var pakin of collection) {
+  pakin.showIt();
+}
+
+for (var x in collection[0]) {
+  console.log(x);
+}
